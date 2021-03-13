@@ -34,6 +34,10 @@ function calculateTotal(calculateThis){
     
 }
 
+app.post('/clear', (req, res)=>{
+    console.log('in clear POST');
+    calc=[];
+})
 
 app.post('/calculated', (req, res)=>{
     console.log('in /calculated POST', req.body)

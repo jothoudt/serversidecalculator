@@ -43,6 +43,16 @@ function calculator(){
 
 function clearCalculator(){
     console.log('in clearCalculator')
+    $.ajax({
+        type:'POST',
+        url: '/clear'
+    }).then(function(response){
+        console.log('calculator cleared')
+    }).catch(function(err){
+        alert('error clearing calculations')
+        console.log(err);
+    })
+    $('#lastCalculation').empty();
 }
 
 function displayLastCalculation(){
