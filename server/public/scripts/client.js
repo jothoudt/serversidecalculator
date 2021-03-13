@@ -37,6 +37,8 @@ function calculator(){
     })
     console.log('in calculate');
     displayLastCalculation();
+    $('#number1').val('');
+    $('#number2').val('');
 }
 
 function clearCalculator(){
@@ -52,7 +54,7 @@ function displayLastCalculation(){
     }).then(function(response){
         console.log('back from GET with:', response);
         $('#lastCalculation').empty();
-        for(let i=0; i<response.length; i++){
+        for(let i=response.length-1; i>=0; i--){
             $('#lastCalculation').append(`
             <p>${response[i].num1}${response[i].operator}${response[i].num2}=${response[i].total}</p>`);
         }
