@@ -4,6 +4,9 @@
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+[x] set up and source scripts, styles and index
+[x] Set up base functions of server
+[x] Add inputs on html
+[x] Add clickhandlers
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
