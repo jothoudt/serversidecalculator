@@ -35,8 +35,8 @@ function calculator(){
     }).catch(function(err){
         alert('error calculating')
     })
-    console.log()
     console.log('in calculate');
+    displayLastCalculation();
 }
 
 function clearCalculator(){
@@ -44,15 +44,17 @@ function clearCalculator(){
 }
 
 function displayLastCalculation(){
+
     $.ajax({
         url: '/calculated',
         type: 'GET'
+
     }).then(function(response){
-        console.log('back from GET with:', response)
-        $('#lastCalculation').empty()
+        console.log('back from GET with:', response);
+        $('#lastCalculation').empty();
         for(let i=0; i<response.length; i++){
             $('#lastCalculation').append(`
-            <p>${response[i].num1}${response[i].operator}${response[i].num2}=${response[i].total}`);
+            <p>${response[i].num1}${response[i].operator}${response[i].num2}=${response[i].total}</p>`);
         }
     }).catch(function(err){
         alert('error recieving calculation');
