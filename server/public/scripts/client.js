@@ -42,3 +42,7 @@ function calculator(){
 function clearCalculator(){
     console.log('in clearCalculator')
 }
+
+function displayLastCalculation(){
+    
+}
