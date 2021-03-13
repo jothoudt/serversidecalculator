@@ -12,7 +12,8 @@
 [x] create a function to gather parameters of calculations
 [x] Ajax post route to send object to server
 [x] calculation function on server
-[x] append last calculation to DOM
+[] Ajax get calculation
+[x] append calculation to DOM
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

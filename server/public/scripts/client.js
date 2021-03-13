@@ -44,5 +44,18 @@ function clearCalculator(){
 }
 
 function displayLastCalculation(){
-    
+    $.ajax({
+        url: '/calculated',
+        type: 'GET'
+    }).then(function(response){
+        console.log('back from GET with:', response)
+        $('#lastCalculation').empty()
+        for(let i=0; i<response.length; i++){
+            $('#lastCalculation').append(`
+            <p>${response[i].num1}${response[i].operator}${response[i].num2}=${response[i].total}`);
+        }
+    }).catch(function(err){
+        alert('error recieving calculation');
+        console.log(err);
+    })
 }
