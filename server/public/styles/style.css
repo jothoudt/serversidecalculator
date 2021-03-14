@@ -1,0 +1,16 @@
+body{
+    background-color: burlywood;
+}
+header{
+    background-color: beige;
+}
+#calculator {
+    border: 2px solid black;
+    background-color: beige;
+}
+#currentCalculation{
+    background-color: beige;
+}
+#pastCalculation{
+    background-color: beige;
+}

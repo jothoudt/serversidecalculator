@@ -14,7 +14,9 @@
 [x] calculation function on server
 [x] Ajax get calculation
 [x] append calculation to DOM
-[] Ajax post route to clear calculator
+[x] Ajax post route to clear calculator
+[x] clear calculation history array
+[x] clear Dom of past calculations
 
 
 
