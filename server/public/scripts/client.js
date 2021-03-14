@@ -103,4 +103,4 @@ function displayCalculation(){
         alert('error last calculation');
         console.log(err);
     })
-}//end displayCalculations
+}//end displayCalculations functions

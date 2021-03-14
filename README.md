@@ -17,6 +17,7 @@
 [x] Ajax post route to clear calculator
 [x] clear calculation history array
 [x] clear Dom of past calculations
+[x] add css styling
 
 
 
